@@ -1,10 +1,10 @@
 import smtplib
 
 #Email recipiente
-meu_email = "eduardo.r.delfino@gmail.com"
+meu_email = "x@gmail.com"
 
 #Email destinatario
-enviar_para = "eduardo27_minotauro@hotmail.com"
+enviar_para = "y@hotmail.com"
 
 #servidor SMTP
 smtp = "smtp.gmail.com"
