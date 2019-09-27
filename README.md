@@ -5,12 +5,15 @@ https://www.youtube.com/watch?v=UOxSh9NEXOQ&list=PLIfZMtpPYFP4seAqp3K96-PPVFCgX6
 
 # Rodar o python pelo terminal
 ```
+Acessar a pasta onde esta o arquivo
+/Documentos/git/python/exemplos/funcao
 ex; python soma.py  enter
 ```
 
 # Rodar o python run do intellij
 ```
 configurar o SDK para o python instalado ex pyton 3.6
+basta escolher o arquivo soma.py e clicar em run
 ```
 
 # Obs
