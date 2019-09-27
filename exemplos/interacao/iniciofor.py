@@ -22,4 +22,4 @@
 
 for y in range(1,5):
     for x in range(20,24):
-        print'Scan sendo realizado no ip 192.168.0.%d na porta %d' %(y,x)
+        print('Scan sendo realizado no ip 192.168.0.%d na porta %d' %(y,x))
