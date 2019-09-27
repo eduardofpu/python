@@ -36,7 +36,7 @@ server.starttls()
 server.login(meu_email, open('senha.txt').read().strip())
 
 text = msg.as_string()
-print text
+print(text)
 
 server.sendmail(meu_email, encaminhar, text)
 server.quit()

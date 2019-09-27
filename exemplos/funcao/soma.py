@@ -11,7 +11,7 @@ def soma(x,y):
     
 def imprimir(total):    
     # print 'A soma de x + y = ' +str(total)
-    print 'A soma de x + y = % d ' % total
+    print('A soma de x + y = % d ' % total)
 
 def main(args):
     entrada()

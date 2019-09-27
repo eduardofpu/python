@@ -40,7 +40,7 @@ server.starttls()
 server.login(meu_email, open('senha.txt').read().strip())
 
 msg = msg.as_string()
-print msg
+print(msg)
 
 server.sendmail(meu_email, encaminhar, msg)
 server.quit()

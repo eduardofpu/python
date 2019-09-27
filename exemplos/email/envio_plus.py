@@ -11,7 +11,7 @@ msg['To'] = 'Pythonicos'
 msg['Subject'] = 'Enviando Teste'
 
 msg = msg.as_string()
-print msg
+print(msg)
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
