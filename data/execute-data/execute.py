@@ -3,7 +3,7 @@ from data.resources.conexao1 import open_data, close_data, open_cursor
 def execute():
 
     # CRIANDO A QUERY
-    query = """select id,param1,param2,param3 from tabela where customer_id = '1'"""
+    query = """select id,param1,param2,param3 from tabela where tabela = '1'"""
 
     try:
 
