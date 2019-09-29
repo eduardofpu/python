@@ -1,14 +1,14 @@
-from data.resources.conexao1 import open_telecom, close_telecom, open_cursor
+from data.resources.conexao1 import open_data, close_data, open_cursor
 
 def execute():
 
     # CRIANDO A QUERY
-    query = """select id,param1,param2,param3 from rw_subscriber where customer_id = '1'"""
+    query = """select id,param1,param2,param3 from tabela where customer_id = '1'"""
 
     try:
 
         # REALIZANDO A CONEXÃO
-        connect = open_telecom(query)
+        connect = open_data(query)
 
         # CRIANDO AS COLUNAS
         rows = open_cursor(connect, query)
@@ -23,7 +23,7 @@ def execute():
     finally:
 
         # FECHANDO A CONEXÃO
-        close_telecom(connect)
+        close_data(connect)
 
 def main():
 

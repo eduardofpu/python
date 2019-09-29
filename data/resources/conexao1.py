@@ -8,10 +8,10 @@ def __open_connect(query):
     try:
 
         connection = psy.connect(
-            database='nomedatabase',
-            user='nomeuser',
-            password='senha',
-            host='localhost')
+            database='rw_telecom_services',
+            user='rw_telecom_services',
+            password='67ghXzZup16',
+            host='nextel-digital.cgj6o4vje0vr.sa-east-1.rds.amazonaws.com')
 
         open_cursor(connection,query)
 
@@ -43,12 +43,12 @@ def __open__cursor(connection, query):
     rows = cursor.fetchall()
     return rows
 
-def open_telecom(query):
+def open_data(query):
 
     return __open_connect(query)
 
 
-def close_telecom(connection):
+def close_data(connection):
 
     return __close_connect(connection)
 

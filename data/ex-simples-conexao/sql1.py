@@ -10,7 +10,7 @@ conexao = psy.connect(
     host='localhost')
 
 
-query = """select id,param1,param2,param3 from rw_subscriber where customer_id = '1'"""
+query = """select id,param1,param2,param3 from tabela where customer_id = '1'"""
 cursor = conexao.cursor()
 cursor.execute(query)
 rows = cursor.fetchall()
