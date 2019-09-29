@@ -8,10 +8,10 @@ def __open_connect(query):
     try:
 
         connection = psy.connect(
-            database='rw_telecom_services',
-            user='rw_telecom_services',
-            password='67ghXzZup16',
-            host='nextel-digital.cgj6o4vje0vr.sa-east-1.rds.amazonaws.com')
+            database='nomedatabase',
+            user='nomeuser',
+            password='senha',
+            host='localhost')
 
         open_cursor(connection,query)
 
