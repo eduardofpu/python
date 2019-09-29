@@ -1,8 +1,8 @@
 import glob,os,sys
 
 def entrada():
-    x = raw_input('Digite um valora x: ')
-    y = raw_input('Digite um valora y: ')
+    x = input('Digite um valora x: ')
+    y = input('Digite um valora y: ')
     soma(x,y)
 
 def soma(x,y):    
@@ -13,9 +13,9 @@ def imprimir(total):
     # print 'A soma de x + y = ' +str(total)
     print('A soma de x + y = % d ' % total)
 
-def main(args):
+def main():
     entrada()
 
 
 if __name__ == '__main__':
-    sys.exit(main(sys.argv))
+    main()
