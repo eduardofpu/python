@@ -8,10 +8,10 @@ def __open_connect(query):
     try:
 
         connection = psy.connect(
-            database='nomedatabase',
-            user='nomeuser',
+            database='databse',
+            user='user',
             password='senha',
-            host='localhost')
+            host='host')
 
         open_cursor(connection,query)
 

@@ -1,20 +1,20 @@
-from data.resources.conexao1 import open_data, close_data, open_cursor
+from data.resources.conexao2 import open_data, close_data, open_cursor
 
 def execute():
 
     # CRIANDO A QUERY
-    query = """select id,param1,param2,param3 from tabela where tabela = '1'"""
+    query = "select id,param1,param2,param3 from tabela where id = 1"
 
     try:
 
         # REALIZANDO A CONEXÃO
-        connect = open_data(query)
+        connect, rows = open_data()
 
         # CRIANDO AS COLUNAS
         rows = open_cursor(connect, query)
 
         for r in rows:
-            print(f'id {r[0]} param1 {r[1]} param1 {r[2]} param3 {r[3]}')
+            print(f'id {r[0]} param1 {r[1]} param2 {r[2]} param3 {r[3]}')
 
 
     except Exception as ex:
